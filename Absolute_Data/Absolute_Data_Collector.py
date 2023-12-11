@@ -6,7 +6,7 @@ import requests
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the path to Filtered_Songs.json
-filtered_songs_path = os.path.join(script_directory, '..', 'Data_Filter', 'Filtered_Songs.json')
+filtered_songs_path = os.path.join(script_directory, '..', 'Data_Filter', 'Filtered_Songs_Part_2.json')
 token_info_file_path = os.path.join(script_directory, '..', 'User_Token', 'token_info.json')
 # Now you can use filtered_songs_path in your code
 print(filtered_songs_path)
@@ -39,7 +39,6 @@ for i in range(0, len(playlist_data), max_tracks_per_request):
     # Prepare the query parameters
     params = {'ids': ','.join(track_uris)}
 
-
     # Prepare the request headers
     headers = {'Authorization': f'Bearer {spotify_api_key}'}
 
@@ -62,3 +61,10 @@ for i in range(0, len(playlist_data), max_tracks_per_request):
         print(f"Error: {response.status_code}, {response.text}")
 
 # Now, the playlist_data list contains the merged data
+
+# Save the modified data to a new JSON file
+output_file_path = os.path.join(script_directory, '..', 'Data_Filter', 'Filtered_Songs_Part_2.json')
+with open(output_file_path, 'w', encoding='utf-8') as output_file:
+    json.dump(playlist_data, output_file, ensure_ascii=False, indent=2)
+
+print(f"Filtered data saved to: {output_file_path}")
