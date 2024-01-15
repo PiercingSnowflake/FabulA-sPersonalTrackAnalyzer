@@ -13,6 +13,7 @@ Json_File_List = ["Streaming_History_Audio_2018-2019_0.json",
 Keys_to_Extract = ["ts",
                    "ms_played",
                    "master_metadata_track_name",
+                   "master_metadata_album_artist_name"
                    "spotify_track_uri"
                    ]
 
