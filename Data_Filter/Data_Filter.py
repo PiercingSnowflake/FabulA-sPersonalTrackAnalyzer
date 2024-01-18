@@ -1,19 +1,19 @@
 import json
 
-Json_File_List = ["Streaming_History_Audio_2018-2019_0.json",
-                  "Streaming_History_Audio_2019_1.json",
-                  "Streaming_History_Audio_2019-2020_2.json",
-                  "Streaming_History_Audio_2020-2021_3.json",
-                  "Streaming_History_Audio_2021-2022_4.json",
-                  "Streaming_History_Audio_2022-2023_5.json",
-                  "Streaming_History_Audio_2023_6.json",
-                  "Streaming_History_Audio_2023_7.json"
-                  ]
+Json_File_List = [
+    "Stream_History_Files/Streaming_History_Audio_2018-2019_0.json",
+    "Stream_History_Files/Streaming_History_Audio_2019_1.json",
+    "Stream_History_Files/Streaming_History_Audio_2019-2020_2.json",
+    "Stream_History_Files/Streaming_History_Audio_2020-2021_3.json",
+    "Stream_History_Files/Streaming_History_Audio_2021-2022_4.json",
+    "Stream_History_Files/Streaming_History_Audio_2022-2023_5.json",
+    "Stream_History_Files/Streaming_History_Audio_2023_6.json",
+    "Stream_History_Files/Streaming_History_Audio_2023_7.json"
+]
 
 Keys_to_Extract = ["ts",
                    "ms_played",
                    "master_metadata_track_name",
-                   "master_metadata_album_artist_name"
                    "spotify_track_uri"
                    ]
 
