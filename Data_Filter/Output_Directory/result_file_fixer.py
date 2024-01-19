@@ -37,5 +37,5 @@ filled_data = fill_missing_values(data)
 
 # Now filled_data contains entries with additional details
 # You can save this data to a new file or use it as needed
-with open("result.json.json", 'w', encoding='utf-8') as output_file:
+with open("RealResult.json", 'w', encoding='utf-8') as output_file:
     json.dump(filled_data, output_file, ensure_ascii=False, indent=2)
