@@ -14,3 +14,5 @@ this data was obviously not enough and not usable in making api calls to get mor
 
 but after that i checked the data from extended history files. Those were quite detailed actually. here is a sample of it
 ![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/41743d5e-c4a9-4ccb-98ee-c42711f95449)
+this is only 1 sample of the tracks (which i quite like, would recommend you to listen, here is an uri for it ---> spotify:track:3aam0kEa1rs9Zk1X0V2QC6   and a url as well ---> https://open.spotify.com/intl-tr/track/3aam0kEa1rs9Zk1X0V2QC6?si=ab1a816e30394737)
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3aam0kEa1rs9Zk1X0V2QC6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
