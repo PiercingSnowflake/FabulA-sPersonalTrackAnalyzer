@@ -66,6 +66,7 @@ as for the json files' structure they are like this
 
 Using these tokens i requested the audio features of the songs in my new filtered dataset via the code in Absolute_Data_Collector.py yet this process was quite difficult.
 Because spotify web api allows me to send a limited number of requests per time interval. and as from my experience the time you need to wait after reaching the request limit is not some 1 hour waiting but posssibly 12 hours, possibly a day. maybe it can have a reset at a given time of the day i don't know. Yet my data was so big that i kept hitting this wall so i needed a way to walk around it.
+i already expected such a thing happening so i sent requests in batches of 100 tracks per request yet it still was quite long
 
 here is the solution i found.
 from some experience i knew that i could request around 60-70% of the data so i splitted my data into 2 with the help of the code Filtered_Splitter.py
@@ -74,9 +75,57 @@ from some experience i knew that i could request around 60-70% of the data so i 
 
 as far as i remember this code had a slight isssue of arranging the [] paranthesis at the beginning and the end of the file so i had to fix them manually. it took less than a minute to fix anyways.
 
+Then i ran the code to get audio features from endpoint audio_features_url = 'https://api.spotify.com/v1/audio-features' once again (the absolute data collector file)
+
+then i thought i got all the tracks' audio features and was happy for 1-2 days. Only to realize that i got "scammed" by spotify.
+
+the new issue is this
+let's create a batch of 100 tracks i listened.
+let's say i had such a listening queue
+
+Aerie & Howling
+20 Years of Dysphoria and a Half-Entropy
+rosa centifolia
+Chlo\u00e9
+Le Porteur d'Ombre
+escape (the looking-glass, and what alice found there)
+Solstice
+rosa centifolia
+Aerie & Howling
+20 Years of Dysphoria and a Half-Entropy
 
 
+as these are in the same batch of 100 songs which were sent to spotify in the request, spotify api did a lazy work and only gave me the audio features of the first instances of the tracks.
+like the first json object for the Aerie & Howling has the audio features i requested. yet the 2nd one doesn't have it. but somewhere later in the file it still has the audio features.
 
+Also i'm talking about audio features but to give example they are those values we worked on homework 1
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/aa19384d-4616-45d0-b958-dcd95e53b818)
+
+you can wonder that where is the genres of the tracks? they are not associated with the tracks but associated with the artists. so this project doesn't have the genres. I still could add them but i didn't because of a couple reasons. 1st is that i was lazy, 2nd is if i was going to do it it would cost me more api requests. 3rd is that fixing of the dataset was almost driving me mad due to this last issue i explained and the same thing was going to happen again. 4th reason is that the project was already going to post the most frequent artists and stuff which i could show. and the 5th reason is that i have many artists which i listen to marked with the genre as "rythm games" which is not a genre at all. i couldn't just say the neurofunk track, the speedcore one and the electornica one are all rythm games. it just wouldn't make sense.
+
+anyways, to return to the subject. i had to fix the isssue of the lacking datas. so i've written the missing_data_filler.py which was a nice try at best. then i realized that i forgot to add the artist names to my data at the data_filter.py step, the one with 45 second threshold and the song must still be in spotify one.
+
+then i wrote the code forgot_to_add_artist_names_cuz_im_dumb.py. which basically finds the artist names by matching them from the initial files spotify sent me with track uris and artist names. once it finds a matching uri between 2 files it adds the artist name of the track and keeps it in a new file.
+
+but somehow some details were still not on this new file. so i wrote another code named result_file_fixer.py which worked fine (finally). what that code done was it was running from the result of the previous file one by one. if it finds a json entry without the audio analysis it gets its uri, the code was running through entire file once again to see if there is a json object with same uri with the audio analysis. once it finds such an object it copies the audio features of that track and pastes it to the object with missing values. I am aware of its time complexity. but i had to find a solution quick, not a quick solution. hence i used this brute force approach.
+
+after that i had my 170 mb of json data file
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/4639dad5-b226-4bb1-ae89-370072b877bc)
+
+afterwards i did work on the data a bit
+
+i've written a code to plot my most listened artists first. which had the result:
+
+![MostListenedArtists](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/8d42b97a-ef15-46f0-941f-ebf7f68587d5)
+
+then i've written another code to show my most listened songs by both the hours i listened them and the times i listened them
+here are both their graphs
+
+
+![mostlistenedsongsbyplaycount](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/e2927705-1128-45aa-8865-7538368d3f48)
+![mostlistenedsongsbyhours](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/1071355b-1722-4cd6-9534-3ead04112dd1)
 
 
 
