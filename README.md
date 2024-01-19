@@ -1,1 +1,16 @@
 Welcome to Metin Ulaş Erdoğan's self analysis of spotify listening history.
+
+First let's begin with the reason why I decided to use my spotify data.
+To be honest it has nothing to do with homework 1. i don't use traditional social media. i have a reddit account wheree i delete search history often, have my youtube history turned off, no insta, not twitter (or x) etc.
+the ones i could use are my bank transactions, google maps data, discord chat log, spotify streaming history, and steam data.
+as you can imagine i didn't want to use the first 2 from the beginning so i tried to request my data from the latter 3.
+so i used my right to request my data from the service providers thanks to UN's law set in 2018. (check General Data Protection Regulation if you want more info) and requested my personal data from spotify and discord.
+i haven't requested data from steam because it was more of a hassle to request, compared to pressing a couple buttons.
+then i checked the data i got from both those platforms and decided that using my discord chat logs beginning from 2017 would be a nightmare for both me and the reader so i stick with spotify data. which was around the time of homework's release.
+
+spotify sent me data in 3 batches, one of them was about the technical information, which included some hard to make sense data. the most i could use to make sense was how much battery my device haad at the given time. As you may guess i didn't use it as well.
+the other batch was the not so detailed batch. it included up to 2 years old data (i think? it was nowhere near 2018 data at least) and it didn't have any details. it had the info of the track name, track artist name, and when it was listened.
+this data was obviously not enough and not usable in making api calls to get more data as well.
+
+but after that i checked the data from extended history files. Those were quite detailed actually. here is a sample of it
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/41743d5e-c4a9-4ccb-98ee-c42711f95449)
