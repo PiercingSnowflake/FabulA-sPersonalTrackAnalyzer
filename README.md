@@ -127,6 +127,30 @@ here are both their graphs
 ![mostlistenedsongsbyplaycount](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/e2927705-1128-45aa-8865-7538368d3f48)
 ![mostlistenedsongsbyhours](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/1071355b-1722-4cd6-9534-3ead04112dd1)
 
+then made an experimental code to see how likely i am to skip a song based on the audio features i've gathered (after 45 seconds, as in skipping in the middle of it)
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/7ee65c3c-25e5-4fae-8d0f-88d4fa196eb4)
+
+it seems i skip the songs quite often
+
+then i followed by using the values which were quite a hassle to gather. i showed how much they changed over the years
+![acousticness](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/e2728368-5c15-4920-bef3-c5ea501c9df7)
+![energy](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/9e2df184-a243-46c9-a40b-1754dbb90834)
+![danceability](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/42df3335-ee9f-4581-a2a4-7b31a539c595)
+![valence](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/bac6eede-e9bf-4916-a59b-9cf155980335)
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/335b49fd-c410-44d1-aa13-aebc9ef27ffa)
+
+Spotify uses the word “valence” to measure whether a song is likely to make someone feel happy (higher valence) or sad (lower valence). The metric is measured on a scale from 0.0 to 1.0. "Danceability" refers to how suitable a track is for dancing based on a combination of musical elements. so during the covid19 years it nicely coincides with that value getting lower
+
+other values also show a similar trend. yet the energy value shows the quite opposite one
+
+and finally there is the total listening time and number of songs played graphs over months
+
+![numhoursovermonths](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/7228664a-4ca2-4889-b5c4-f5d7ee10752b)
+![numsongovermonths](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/b0a056b9-cc0a-44b1-a15d-ac64a8c61ad7)
+
+i can't find much of a seaasonality or a trend on these ones but i can say that i usually listen a lot.
 
 
 
