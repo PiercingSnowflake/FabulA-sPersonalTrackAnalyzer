@@ -64,7 +64,17 @@ as for the json files' structure they are like this
 
 ![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/4bb37540-5293-4e2d-b3d4-c0d6277357d9)
 
-using these tokens i requested the 
+Using these tokens i requested the audio features of the songs in my new filtered dataset via the code in Absolute_Data_Collector.py yet this process was quite difficult.
+Because spotify web api allows me to send a limited number of requests per time interval. and as from my experience the time you need to wait after reaching the request limit is not some 1 hour waiting but posssibly 12 hours, possibly a day. maybe it can have a reset at a given time of the day i don't know. Yet my data was so big that i kept hitting this wall so i needed a way to walk around it.
+
+here is the solution i found.
+from some experience i knew that i could request around 60-70% of the data so i splitted my data into 2 with the help of the code Filtered_Splitter.py
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/5be8ff63-0c70-4441-a404-5b8a49f27983)
+
+as far as i remember this code had a slight isssue of arranging the [] paranthesis at the beginning and the end of the file so i had to fix them manually. it took less than a minute to fix anyways.
+
+
 
 
 
