@@ -37,7 +37,37 @@ and here is the sample outputs from that file
 
 ![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/71444822-b360-4375-8cba-e59e5bc41bba)
 
+at this point i got a bit curious about how many days of my life i've spent listening to music so i've written main.py
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/def5de37-5d21-45cf-b6f4-4b554f51257f)
+
+and it turns out i've spent 230 days since 2018. and there is a time where i reduced spotify usage as i was also using youtube music. Remember that this only includes the filtered songs so it is actually quite longer.
+
+
 at this point i could start working on getting the song analysis of each track in my new samples. for this i was going to use spotify web api.
 i spent some of my time doing some other projects using spotify web api in this semester. By the help of that experiments i learned how i can request the details the tracks had on homework 1 so i might use them.
+after that i created such an app
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/e1e94e62-70c9-4eeb-849a-0462f81532ef)
+
+the monthly active users are quite low (0) as i don't have any more use of this app.
+but if you want to use spotify web api here's a link for you ---> https://developer.spotify.com/
+
+anyways, to return to subject i've used the app with these files
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/6c514973-eb34-4819-a88b-f017f4ccc78d)
+
+i can't send the code in a ssingle screenshot as it is larger than that yet you can see the code in the repository
+as for the json files' structure they are like this
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/7dbc4f6e-089d-4449-ac3a-56f876d9f6b3)
+
+![image](https://github.com/PiercingSnowflake/FabulA-sPersonalTrackAnalyzer/assets/56087824/4bb37540-5293-4e2d-b3d4-c0d6277357d9)
+
+
+
+
+
+
 
 
