@@ -152,5 +152,9 @@ and finally there is the total listening time and number of songs played graphs 
 
 i can't find much of a seaasonality or a trend on these ones but i can say that i usually listen a lot.
 
+Hope you had fun reading!
+
+metin ulaş erdoğan
+31134
 
 
