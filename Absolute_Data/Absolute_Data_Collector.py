@@ -14,7 +14,7 @@ print(filtered_songs_path)
 # Spotify API endpoint for audio features
 audio_features_url = 'https://api.spotify.com/v1/audio-features'
 
-# Spotify API key (replace with your actual key)
+# Spotify API key
 with open(token_info_file_path, "r", encoding="utf-8") as token_file:
     token_file_data = json.load(token_file)
     spotify_api_key = token_file_data["access_token"]
@@ -52,7 +52,6 @@ for i in range(0, len(playlist_data), max_tracks_per_request):
         # Process the audio features data as needed
         for audio_features in audio_features_data['audio_features']:
             # Merge the audio features with the original playlist data
-            # (you might want to customize this based on your needs)
             playlist_item = next(item for item in chunk if item['spotify_track_uri'].endswith(audio_features['id']))
             playlist_item.update(audio_features)
 

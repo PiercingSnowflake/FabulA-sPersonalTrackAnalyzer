@@ -1,6 +1,6 @@
 import json
 
-json_files = ['Data_Filter\\Filtered_Songs.json']  # Use double backslashes or a raw string
+json_files = ['Data_Filter\\Filtered_Songs.json']
 total_seconds=0
 dayLength = 86400
 # Iterate through each JSON file

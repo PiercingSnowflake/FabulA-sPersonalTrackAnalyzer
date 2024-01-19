@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the JSON file
-with open("result.json", 'r', encoding='utf-8') as file:
+with open("RealResult.json", 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 # Convert the data to a DataFrame

@@ -24,9 +24,6 @@ for filename in os.listdir(initial_files_dir):
             data = json.load(file)
             artist_data_list.extend(data)
 
-# Rest of the code remains the same...
-
-
 # Read and update data from updated files
 updated_files = ['updated_data.json', 'updated_data_2.json']
 
